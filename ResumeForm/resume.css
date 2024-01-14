@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "nice";
+  src: "Roboto Mono", monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #fff0ce;
+}
+body #container {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+}
+body #container .colorBox {
+  width: 100%;
+  height: 110px;
+  background-color: #0174be;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body #container .colorBox h1 {
+  width: 300px;
+  padding-right: 10px;
+  text-align: start;
+  color: #ffc436;
+  font-family: "Roboto Mono", monospace;
+}
+body #container .left {
+  width: 40%;
+  height: 100%;
+  background-color: #0c356a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 15px;
+}
+body #container .left .personal-inform-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #container .left .personal-inform-container .img-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-position: center;
+}
+body #container .left .personal-inform-container .img-box #profile-img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+body #container .left .personal-inform-container .contactGroup {
+  width: 100%;
+  height: 340px;
+  margin-top: 22px;
+  font-family: "Roboto Mono", monospace;
+  cursor: default;
+}
+body #container .left .personal-inform-container .contactGroup h3 {
+  font-size: 24px;
+  color: #ffc436;
+  font-weight: 400;
+}
+body #container .left .personal-inform-container .contactGroup .phone-address-email {
+  width: 100%;
+  height: 200px;
+}
+body #container .left .personal-inform-container .contactGroup .phone-address-email .phone,
+body #container .left .personal-inform-container .contactGroup .phone-address-email .email,
+body #container .left .personal-inform-container .contactGroup .phone-address-email .address {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffc436;
+}
+body #container .left .personal-inform-container .contactGroup .phone-address-email .phone .fa-solid,
+body #container .left .personal-inform-container .contactGroup .phone-address-email .email .fa-solid,
+body #container .left .personal-inform-container .contactGroup .phone-address-email .address .fa-solid {
+  font-size: 18px;
+}
+body #container .left .personal-inform-container .contactGroup .phone-address-email .phone p,
+body #container .left .personal-inform-container .contactGroup .phone-address-email .email p,
+body #container .left .personal-inform-container .contactGroup .phone-address-email .address p {
+  width: 180px;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+body #container .left .personal-inform-container .contactGroup .phone-address-email .address {
+  height: auto;
+  align-items: start;
+  margin-top: 20px;
+}
+body #container .left .personal-inform-container .contactGroup .phone-address-email .address .addressText {
+  text-align: start;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-left: 30px;
+}
+body #container .left .personal-inform-container .social-link {
+  width: 100%;
+  margin-top: 10px;
+}
+body #container .left .personal-inform-container .social-link h3 {
+  font-size: 24px;
+  color: #ffc436;
+  font-weight: 400;
+}
+body #container .left .personal-inform-container .social-link .linke-git-twitter .linke,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .git,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .twitter {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffc436;
+}
+body #container .left .personal-inform-container .social-link .linke-git-twitter .linke .fa-brands,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .git .fa-brands,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .twitter .fa-brands {
+  font-size: 18px;
+}
+body #container .left .personal-inform-container .social-link .linke-git-twitter .linke a,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .git a,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .twitter a {
+  width: 180px;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  color: #ffc436;
+  text-decoration: none;
+}
+body #container .left .personal-inform-container .social-link .linke-git-twitter .linke a:hover,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .git a:hover,
+body #container .left .personal-inform-container .social-link .linke-git-twitter .twitter a:hover {
+  -webkit-text-decoration: underline #ffc436;
+          text-decoration: underline #ffc436;
+  color: #fff0ce;
+}
+body #container .right {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+body #container .right .professional-inform-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #container .right .professional-inform-container .objective,
+body #container .right .professional-inform-container .work-exp,
+body #container .right .professional-inform-container .academic {
+  width: 90%;
+  background-color: #fff0ce;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-family: "Roboto Mono", monospace;
+}
+body #container .right .professional-inform-container .objective .top,
+body #container .right .professional-inform-container .work-exp .top,
+body #container .right .professional-inform-container .academic .top {
+  width: 100%;
+  height: 50px;
+  background-color: #0c356a;
+  border-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  display: flex;
+  align-items: center;
+  color: #ffc436;
+}
+body #container .right .professional-inform-container .objective .top span,
+body #container .right .professional-inform-container .work-exp .top span,
+body #container .right .professional-inform-container .academic .top span {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+body #container .right .professional-inform-container .objective .bottom,
+body #container .right .professional-inform-container .work-exp .bottom,
+body #container .right .professional-inform-container .academic .bottom {
+  width: 100%;
+  color: #ffc436;
+  border-radius: inherit;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding-bottom: 10px;
+}
+body #container .right .professional-inform-container .objective .bottom p,
+body #container .right .professional-inform-container .work-exp .bottom p,
+body #container .right .professional-inform-container .academic .bottom p {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-size: 15px;
+  text-align: start;
+  line-height: 20px;
+  color: #0c356a;
+}/*# sourceMappingURL=resume.css.map */
