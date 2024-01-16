@@ -12,16 +12,28 @@ const twitter = document.querySelector(".twitter-link");
 let localTakeData = localStorage.getItem("fileData");
 let localTakeDataProfile = JSON.parse(localStorage.getItem("new"));
 
+// personal information data form local storage
 profilePic.src = localTakeData;
 profileName.innerText = localTakeDataProfile.name;
 phoneText.innerText = localTakeDataProfile.contactNumber;
 addressText.innerText = localTakeDataProfile.address;
 emailText.innerText = localTakeDataProfile.gmail;
 
+// social link data from localstorage
 linkedin.href = localTakeDataProfile.linkedin;
 git.href = localTakeDataProfile.git;
 twitter.href = localTakeDataProfile.twitter;
 
+// professional information data from localStorage
+const objectiveText = document.getElementById("objectiveText");
+const workExpText = document.getElementById("workExpText");
+const qualifyText = document.getElementById("qualifyText");
+
+objectiveText.innerText = localTakeDataProfile.objective;
+workExpText.innerText = localTakeDataProfile.experience;
+qualifyText.innerText = localTakeDataProfile.qualification;
+
+// print button
 const abc = document.getElementById("butt");
 abc.addEventListener("click", () => {
   abc.style.display = "none";

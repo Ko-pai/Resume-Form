@@ -261,11 +261,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 2px solid black;
+  font-weight: 900;
   width: 22px;
   height: 22px;
   margin-left: 5px;
   font-size: 12px;
+}
+.container main .right .professional-inform-container .showSkill .skillBox .crossSign:hover {
+  border-color: red;
+  color: red;
 }
 .container main .right .professional-inform-container .showSkill span {
   padding: 10px 20px;

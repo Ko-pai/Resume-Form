@@ -78,6 +78,7 @@ let skillId = -1;
 
 addSkill.addEventListener("click", (e) => {
   e.preventDefault();
+
   // skill add value from skill input
   const newV = document.getElementById("skillInput");
   skillObject.push(newV.value);
@@ -95,6 +96,7 @@ addSkill.addEventListener("click", (e) => {
     createSpan.innerText = newV.value;
     createDeleteCircle.innerText = "X";
     createDeleteCircle.classList.add("crossSign");
+    createDeleteCircle.style.cursor = "pointer";
     skillBox.id = skillId;
     createDeleteCircle.id = skillId;
     skillBox.append(createSpan, createDeleteCircle);
@@ -106,14 +108,17 @@ addSkill.addEventListener("click", (e) => {
 
   createDeleteCircle.addEventListener("click", (e) => {
     let localSkillData = JSON.parse(localStorage.getItem("skills"));
-    localSkillData.splice(e.target.id, 1);
     if (skillBox.id === e.target.id) {
+      var newSkillForLocalStorage = localSkillData.filter(
+        (d) => d !== skillBox.firstChild.innerText
+      );
       skillBox.remove();
     }
-    localStorage.setItem("skills", JSON.stringify(localSkillData));
+    localStorage.setItem("skills", JSON.stringify(newSkillForLocalStorage));
   });
 });
 
+/*
 function addNew(e) {
   e.style.borderRadius = "50%";
   e.style.display = "flex";

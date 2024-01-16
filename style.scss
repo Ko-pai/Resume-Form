@@ -280,16 +280,25 @@ body {
             justify-content: center;
             margin-right: 10px;
 
+            b {
+            }
+
             .crossSign {
               border-radius: 50%;
               display: flex;
               align-items: center;
               justify-content: center;
-              border: 1px solid black;
+              border: 2px solid black;
+              font-weight: 900;
               width: 22px;
               height: 22px;
               margin-left: 5px;
               font-size: 12px;
+
+              &:hover {
+                border-color: red;
+                color: red;
+              }
             }
           }
 

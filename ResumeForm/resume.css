@@ -4,20 +4,19 @@
 }
 body {
   margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100dvw;
-  height: 100dvh;
   background-color: #fff0ce;
 }
 body #container {
   width: 800px;
-  height: 100%;
+  height: 1000px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-bottom: 50px;
   background-color: white;
   position: relative;
   font-family: "Roboto Mono", monospace;
@@ -27,7 +26,7 @@ body #container .colorBox {
   height: 110px;
   background-color: #0174be;
   position: absolute;
-  top: 80px;
+  top: 20px;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -176,7 +175,7 @@ body #container .right {
 }
 body #container .right .professional-inform-container {
   width: 100%;
-  height: 80%;
+  height: calc(100% - 130px);
   display: flex;
   flex-direction: column;
   align-items: center;
