@@ -65,12 +65,14 @@ document.querySelector("form").addEventListener("submit", (e) => {
   console.log(data);
 });
 
-selectPhoto.addEventListener("mouseover", (e) => {
+selectPhoto.addEventListener("mousemove", (e) => {
+  // const localImageData = JSON.parse(localStorage.getItem("fileData"));
   if (file.files.length > 0) {
     label.innerText = file.files[0].name;
   }
 });
 
+/*
 // add skill button
 const addSkill = document.querySelector(".add");
 const skillObject = [];
@@ -117,7 +119,7 @@ addSkill.addEventListener("click", (e) => {
     localStorage.setItem("skills", JSON.stringify(newSkillForLocalStorage));
   });
 });
-
+*/
 /*
 function addNew(e) {
   e.style.borderRadius = "50%";

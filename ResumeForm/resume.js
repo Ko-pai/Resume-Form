@@ -39,6 +39,7 @@ abc.addEventListener("click", () => {
   abc.style.display = "none";
   window.print();
 });
+
 /*
 function saveAsPDF(e) {
   e.preventDefault();

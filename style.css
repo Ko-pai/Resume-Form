@@ -5,18 +5,25 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100dvw;
   height: 100dvh;
 }
+@media (max-width: 560px) {
+  .container {
+    height: auto;
+    position: relative;
+  }
+}
 .container header {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
-  background-color: #fff0ce;
+  background-color: #ffc436;
 }
 .container header h1 {
   font-family: "Merriweather", serif;
@@ -26,11 +33,23 @@ body {
   width: 100%;
   display: flex;
 }
+@media (max-width: 560px) {
+  .container main {
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+}
 .container main .left {
   width: 50%;
   height: 90%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 560px) {
+  .container main .left {
+    width: 100%;
+  }
 }
 .container main .left .personal-inform-container {
   width: 90%;
@@ -136,6 +155,11 @@ body {
   justify-content: center;
   position: absolute;
 }
+@media (max-width: 560px) {
+  .container main .left .personal-inform-container .buttonContainer {
+    bottom: -100px;
+  }
+}
 .container main .left .personal-inform-container .buttonContainer button {
   width: 120px;
   height: 50px;
@@ -155,6 +179,11 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+}
+@media (max-width: 560px) {
+  .container main .right {
+    width: 100%;
+  }
 }
 .container main .right .professional-inform-container {
   width: 90%;

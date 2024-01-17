@@ -5,10 +5,27 @@
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100dvw;
   background-color: #fff0ce;
+  overflow-x: hidden;
+}
+body #butt {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #0174be;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body #butt:active {
+  background-color: #0c356a;
 }
 body #container {
   width: 800px;
@@ -17,7 +34,7 @@ body #container {
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 50px;
-  background-color: white;
+  background-color: #0c356a;
   position: relative;
   font-family: "Roboto Mono", monospace;
 }
@@ -41,12 +58,12 @@ body #container .colorBox h1 {
 body #container .left {
   width: 40%;
   height: 100%;
-  background-color: #0c356a;
+  background-color: #ffc436;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 15px;
+  left: 20px;
 }
 body #container .left .personal-inform-container {
   width: 90%;
@@ -79,7 +96,7 @@ body #container .left .personal-inform-container .contactGroup {
 }
 body #container .left .personal-inform-container .contactGroup h3 {
   font-size: 24px;
-  color: #ffc436;
+  color: #0c356a;
   font-weight: 400;
 }
 body #container .left .personal-inform-container .contactGroup .phone-address-email {
@@ -94,7 +111,7 @@ body #container .left .personal-inform-container .contactGroup .phone-address-em
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ffc436;
+  color: #0c356a;
 }
 body #container .left .personal-inform-container .contactGroup .phone-address-email .phone .fa-solid,
 body #container .left .personal-inform-container .contactGroup .phone-address-email .email .fa-solid,
@@ -128,7 +145,7 @@ body #container .left .personal-inform-container .social-link {
 }
 body #container .left .personal-inform-container .social-link h3 {
   font-size: 24px;
-  color: #ffc436;
+  color: #0c356a;
   font-weight: 400;
 }
 body #container .left .personal-inform-container .social-link .linke-git-twitter .linke,
@@ -139,7 +156,7 @@ body #container .left .personal-inform-container .social-link .linke-git-twitter
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ffc436;
+  color: #0c356a;
 }
 body #container .left .personal-inform-container .social-link .linke-git-twitter .linke .fa-brands,
 body #container .left .personal-inform-container .social-link .linke-git-twitter .git .fa-brands,
@@ -156,14 +173,14 @@ body #container .left .personal-inform-container .social-link .linke-git-twitter
   font-size: 15px;
   cursor: pointer;
   letter-spacing: 1px;
-  color: #ffc436;
+  color: #0c356a;
   text-decoration: none;
 }
 body #container .left .personal-inform-container .social-link .linke-git-twitter .linke a:hover,
 body #container .left .personal-inform-container .social-link .linke-git-twitter .git a:hover,
 body #container .left .personal-inform-container .social-link .linke-git-twitter .twitter a:hover {
-  -webkit-text-decoration: underline #ffc436;
-          text-decoration: underline #ffc436;
+  -webkit-text-decoration: underline #0c356a;
+          text-decoration: underline #0c356a;
   color: #fff0ce;
 }
 body #container .right {
@@ -194,13 +211,13 @@ body #container .right .professional-inform-container .work-exp .top,
 body #container .right .professional-inform-container .academic .top {
   width: 100%;
   height: 50px;
-  background-color: #0c356a;
+  background-color: #ffc436;
   border-radius: inherit;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   display: flex;
   align-items: center;
-  color: #ffc436;
+  color: #0c356a;
 }
 body #container .right .professional-inform-container .objective .top span,
 body #container .right .professional-inform-container .work-exp .top span,
