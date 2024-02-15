@@ -27,6 +27,11 @@ body #butt {
 body #butt:active {
   background-color: #0c356a;
 }
+@media (max-width: 560px) {
+  body #butt {
+    margin-left: 0;
+  }
+}
 body #container {
   width: 800px;
   height: 1000px;
@@ -37,6 +42,11 @@ body #container {
   background-color: #0c356a;
   position: relative;
   font-family: "Roboto Mono", monospace;
+}
+@media (max-width: 560px) {
+  body #container {
+    width: 100%;
+  }
 }
 body #container .colorBox {
   width: 100%;
@@ -55,6 +65,11 @@ body #container .colorBox h1 {
   color: #ffc436;
   font-family: "Roboto Mono", monospace;
 }
+@media (max-width: 560px) {
+  body #container .colorBox h1 {
+    width: 200px;
+  }
+}
 body #container .left {
   width: 40%;
   height: 100%;
@@ -64,6 +79,11 @@ body #container .left {
   justify-content: center;
   position: absolute;
   left: 20px;
+}
+@media (max-width: 560px) {
+  body #container .left {
+    left: 10px;
+  }
 }
 body #container .left .personal-inform-container {
   width: 90%;
@@ -190,12 +210,22 @@ body #container .right {
   align-items: end;
   justify-content: center;
 }
+@media (max-width: 560px) {
+  body #container .right {
+    justify-content: unset;
+  }
+}
 body #container .right .professional-inform-container {
   width: 100%;
   height: calc(100% - 130px);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 560px) {
+  body #container .right .professional-inform-container {
+    width: 95%;
+  }
 }
 body #container .right .professional-inform-container .objective,
 body #container .right .professional-inform-container .work-exp,
@@ -227,6 +257,13 @@ body #container .right .professional-inform-container .academic .top span {
   font-weight: 700;
   padding-left: 10px;
 }
+@media (max-width: 560px) {
+  body #container .right .professional-inform-container .objective .top span,
+  body #container .right .professional-inform-container .work-exp .top span,
+  body #container .right .professional-inform-container .academic .top span {
+    font-size: 20px;
+  }
+}
 body #container .right .professional-inform-container .objective .bottom,
 body #container .right .professional-inform-container .work-exp .bottom,
 body #container .right .professional-inform-container .academic .bottom {
@@ -247,4 +284,11 @@ body #container .right .professional-inform-container .academic .bottom p {
   text-align: start;
   line-height: 20px;
   color: #0c356a;
+}
+@media (max-width: 560px) {
+  body #container .right .professional-inform-container .objective .bottom p,
+  body #container .right .professional-inform-container .work-exp .bottom p,
+  body #container .right .professional-inform-container .academic .bottom p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=resume.css.map */
